@@ -1,0 +1,164 @@
+<!-- title: The app · Fridge Bot | description: See what's in your fridge from anywhere, sorted by what to eat first, with use-first reminders, recipe ideas and a monthly tally of food saved. -->
+<section class="page-hero">
+  <div class="wrap">
+    <nav class="crumbs rise" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>The app</span></nav>
+    <h1 class="rise d1">Your fridge, <span class="hl">in your pocket.</span></h1>
+    <p class="lede rise d2">At work, at the store, or on the couch: open Fridge Bot and see what's in there right now, what to eat first, and what you could make tonight.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap demo" data-demo>
+    <div class="demo-copy reveal">
+      <span class="eyebrow">Interactive demo</span>
+      <div class="tabs" role="tablist" aria-label="App screens">
+        <button class="tab" role="tab" aria-selected="true" data-tab="first">Use first</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="all">All items</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="cook">Recipes</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="saved">Savings</button>
+      </div>
+      <div class="panel-desc" data-desc="first">
+        <h2>What needs eating, first.</h2>
+        <p>The home screen sorts everything by days left. Red means today, amber means soon. That's usually the whole decision about dinner.</p>
+      </div>
+      <div class="panel-desc" data-desc="all" hidden>
+        <h2>Everything, shelf by shelf.</h2>
+        <p>Filter by shelf to check the crisper from the dairy aisle. Items hidden behind others stay listed with a "last seen" date.</p>
+      </div>
+      <div class="panel-desc" data-desc="cook" hidden>
+        <h2>Meals from what's there.</h2>
+        <p>Recipe ideas built around what needs using, so dinner clears the shelf instead of adding to it.</p>
+      </div>
+      <div class="panel-desc" data-desc="saved" hidden>
+        <h2>See what you saved.</h2>
+        <p>A monthly tally of food eaten in time versus thrown out, in pounds and in dollars.</p>
+      </div>
+      <p class="form-fine">Sample data for illustration. The app is in development.</p>
+    </div>
+
+    <div class="phone-card reveal">
+      <div class="phone" aria-label="Fridge Bot app demo">
+        <div class="screen" style="min-height:560px;align-content:start">
+          <div class="notch" aria-hidden="true"></div>
+          <div class="screen-top"><span>9:41</span><span>Updated 2 min ago</span></div>
+
+          <div data-panel="first">
+            <h4>Use first<small>3 items need eating in the next 2 days</small></h4>
+            <ul class="items">
+              <li class="item"><svg class="thumb" viewBox="0 0 34 34"><rect width="34" height="34" rx="9" fill="#3F8E46"/><ellipse cx="14" cy="16" rx="7" ry="5" fill="#2E6F35"/><ellipse cx="21" cy="21" rx="7" ry="5" fill="#5BAA5E"/></svg><span><b>Spinach</b><small>Middle shelf · 6 days in</small></span><span class="pill late">TODAY</span></li>
+              <li class="item"><svg class="thumb" viewBox="0 0 34 34"><rect width="34" height="34" rx="9" fill="#8C2F1C"/><rect x="6" y="9" width="22" height="5" rx="2" fill="#DDE7E6"/></svg><span><b>Leftover chili</b><small>Middle shelf · 3 days in</small></span><span class="pill soon">1 DAY</span></li>
+              <li class="item"><svg class="thumb" viewBox="0 0 34 34"><rect width="34" height="34" rx="9" fill="#F6D9D3"/><circle cx="13" cy="19" r="7" fill="#D93A2B"/><circle cx="22" cy="15" r="6" fill="#C9311F"/></svg><span><b>Tomatoes ×4</b><small>Crisper · 5 days in</small></span><span class="pill soon">2 DAYS</span></li>
+              <li class="item"><svg class="thumb" viewBox="0 0 34 34"><rect width="34" height="34" rx="9" fill="#DCE7F5"/><path d="M11 12 L14 7 H21 L24 12 V28 H11 Z" fill="#fff"/><rect x="11" y="16" width="13" height="6" fill="#3C7FD0"/></svg><span><b>Milk</b><small>Top shelf · opened Sat</small></span><span class="pill fresh">4 DAYS</span></li>
+            </ul>
+            <div class="idea"><span class="eyebrow">Tonight, from what you have</span><b>Chili-stuffed peppers with a spinach side</b>Uses 3 of your 4 "use first" items.</div>
+          </div>
+
+          <div data-panel="all" hidden>
+            <h4>All items<small>14 items · last scan 07:42</small></h4>
+            <div class="filter-row" data-shelf-filter role="group" aria-label="Filter by shelf">
+              <button aria-pressed="true" data-f="all">ALL</button>
+              <button aria-pressed="false" data-f="top">TOP</button>
+              <button aria-pressed="false" data-f="mid">MIDDLE</button>
+              <button aria-pressed="false" data-f="crisp">CRISPER</button>
+            </div>
+            <ul class="items">
+              <li class="item" data-shelf="top"><svg class="thumb" viewBox="0 0 34 34"><rect width="34" height="34" rx="9" fill="#DCE7F5"/><path d="M11 12 L14 7 H21 L24 12 V28 H11 Z" fill="#fff"/><rect x="11" y="16" width="13" height="6" fill="#3C7FD0"/></svg><span><b>Milk</b><small>Top shelf</small></span><span class="pill fresh">4 DAYS</span></li>
+              <li class="item" data-shelf="top"><svg class="thumb" viewBox="0 0 34 34"><rect width="34" height="34" rx="9" fill="#F4E9D8"/><ellipse cx="12" cy="18" rx="5" ry="6" fill="#fff" stroke="#C9B79A"/><ellipse cx="22" cy="18" rx="5" ry="6" fill="#fff" stroke="#C9B79A"/></svg><span><b>Eggs ×5</b><small>Top shelf</small></span><span class="pill fresh">2 WK</span></li>
+              <li class="item" data-shelf="top"><svg class="thumb" viewBox="0 0 34 34"><rect width="34" height="34" rx="9" fill="#F7E7C6"/><rect x="10" y="12" width="14" height="16" rx="3" fill="#B3263A"/><rect x="9" y="8" width="16" height="5" rx="2" fill="#E2B33C"/></svg><span><b>Jam</b><small>Top shelf</small></span><span class="pill fresh">3 WK</span></li>
+              <li class="item" data-shelf="mid"><svg class="thumb" viewBox="0 0 34 34"><rect width="34" height="34" rx="9" fill="#3F8E46"/><ellipse cx="14" cy="16" rx="7" ry="5" fill="#2E6F35"/><ellipse cx="21" cy="21" rx="7" ry="5" fill="#5BAA5E"/></svg><span><b>Spinach</b><small>Middle · last seen Tue</small></span><span class="pill late">TODAY</span></li>
+              <li class="item" data-shelf="mid"><svg class="thumb" viewBox="0 0 34 34"><rect width="34" height="34" rx="9" fill="#8C2F1C"/><rect x="6" y="9" width="22" height="5" rx="2" fill="#DDE7E6"/></svg><span><b>Leftover chili</b><small>Middle shelf</small></span><span class="pill soon">1 DAY</span></li>
+              <li class="item" data-shelf="mid"><svg class="thumb" viewBox="0 0 34 34"><rect width="34" height="34" rx="9" fill="#EDE6F7"/><rect x="9" y="10" width="7" height="16" rx="2" fill="#F7F1E1"/><rect x="18" y="10" width="7" height="16" rx="2" fill="#F7F1E1"/><rect x="9" y="10" width="16" height="4" fill="#7C59B8"/></svg><span><b>Yogurt ×2</b><small>Middle shelf</small></span><span class="pill fresh">9 DAYS</span></li>
+              <li class="item" data-shelf="crisp"><svg class="thumb" viewBox="0 0 34 34"><rect width="34" height="34" rx="9" fill="#F6D9D3"/><circle cx="13" cy="19" r="7" fill="#D93A2B"/><circle cx="22" cy="15" r="6" fill="#C9311F"/></svg><span><b>Tomatoes ×4</b><small>Crisper</small></span><span class="pill soon">2 DAYS</span></li>
+              <li class="item" data-shelf="crisp"><svg class="thumb" viewBox="0 0 34 34"><rect width="34" height="34" rx="9" fill="#FBE9D0"/><path d="M8 22 L27 12 L28 15 Z" fill="#EE7A1E"/><path d="M9 26 L28 20 L28 23 Z" fill="#EE7A1E"/></svg><span><b>Carrots</b><small>Crisper</small></span><span class="pill fresh">2 WK</span></li>
+            </ul>
+          </div>
+
+          <div data-panel="cook" hidden>
+            <h4>Cook tonight<small>Ideas that use what needs using</small></h4>
+            <div class="idea"><span class="eyebrow">Best match · 25 min</span><b>Chili-stuffed peppers with a spinach side</b>Uses spinach, leftover chili and tomatoes.</div>
+            <div class="recipe"><b>Spinach and tomato omelette</b><span class="uses"><span class="pill late">SPINACH</span><span class="pill soon">TOMATOES</span><span class="pill fresh">EGGS</span></span><small>15 min · uses 3 items</small></div>
+            <div class="recipe"><b>Chili baked potatoes</b><span class="uses"><span class="pill soon">CHILI</span><span class="pill fresh">YOGURT</span></span><small>40 min · uses 2 items</small></div>
+            <div class="recipe"><b>Roasted carrot and tomato soup</b><span class="uses"><span class="pill soon">TOMATOES</span><span class="pill fresh">CARROTS</span></span><small>35 min · uses 2 items</small></div>
+          </div>
+
+          <div data-panel="saved" hidden>
+            <h4>This month<small>Food eaten in time vs. thrown out</small></h4>
+            <div class="savings">
+              <div class="big">92%<small>eaten in time</small></div>
+              <div class="bars" aria-label="Share of food eaten in time, last six months">
+                <span><i style="height:46px"></i>MAY</span>
+                <span><i style="height:52px"></i>JUN</span>
+                <span><i style="height:58px"></i>JUL</span>
+                <span><i style="height:66px"></i>AUG</span>
+                <span><i style="height:72px"></i>SEP</span>
+                <span><i style="height:80px"></i>OCT</span>
+              </div>
+              <div class="mini-stats">
+                <div><b>11 lb</b>rescued this month</div>
+                <div><b>3 items</b>thrown out</div>
+              </div>
+              <div class="idea"><span class="eyebrow">Streak</span><b>9 days with nothing thrown out</b>Keep the spinach streak alive tonight.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Features</span>
+      <h2>Small nudges, at the right moment.</h2>
+    </div>
+    <div class="grid-3 reveal">
+      <div class="feature">
+        <span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10" cy="10" r="7.5"/><path d="M10 5.5V10l3 2" stroke-linecap="round"/></svg></span>
+        <h3>Use-first reminders</h3>
+        <p>A short nudge when something is about to turn, sent in time to actually cook it.</p>
+      </div>
+      <div class="feature">
+        <span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M2.5 4h2l2 9h9l1.5-6.5H6"/><circle cx="8" cy="16.5" r="1"/><circle cx="14.5" cy="16.5" r="1"/></svg></span>
+        <h3>Check from the store</h3>
+        <p>Standing in the dairy aisle? Look at the latest photo and skip the second carton.</p>
+      </div>
+      <div class="feature">
+        <span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 2.5v6a2 2 0 0 0 4 0v-6M6 10.5v7M14 17.5v-15c-2 1-3 3.5-3 6.5h3"/></svg></span>
+        <h3>Meals from what's there</h3>
+        <p>Recipe ideas built around the items that need using, so dinner clears the shelf.</p>
+      </div>
+      <div class="feature">
+        <span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 16.5h14M5.5 13V9.5M10 13V5.5M14.5 13V8"/></svg></span>
+        <h3>See what you saved</h3>
+        <p>A monthly tally of food eaten in time versus thrown out, in pounds and in dollars.</p>
+      </div>
+      <div class="feature">
+        <span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="15" height="12" rx="2.5"/><circle cx="10" cy="10" r="3"/></svg></span>
+        <h3>Latest photo, any time</h3>
+        <p>See the actual shelf from the last door close, not just the list.</p>
+      </div>
+      <div class="feature">
+        <span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 3.5l3 3L7 16H4v-3z"/></svg></span>
+        <h3>Tap to correct</h3>
+        <p>Wrong guess? Fix the name or date with a tap, and the app learns from it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="join">
+  <div class="wrap">
+    <div class="join-card cta-card reveal">
+      <div>
+        <span class="eyebrow">Early access</span>
+        <h2 style="margin-top:14px">Want the real thing?</h2>
+        <p>Beta testers get the app and a camera before anyone else.</p>
+      </div>
+      <div class="hero-ctas">
+        <a class="btn btn-on-deep" href="hardware.html">See the hardware</a>
+        <a class="btn btn-primary" href="waitlist.html">Join the waitlist</a>
+      </div>
+    </div>
+  </div>
+</div>

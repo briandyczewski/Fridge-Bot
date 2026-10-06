@@ -1,0 +1,72 @@
+<!-- title: Join the waitlist · Fridge Bot | description: Be first to try Fridge Bot. Join the waitlist for beta access and launch news. -->
+<section class="page-hero" style="padding-bottom:104px">
+  <div class="wrap signup">
+    <div style="display:grid;gap:22px">
+      <nav class="crumbs rise" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Waitlist</span></nav>
+      <h1 class="rise d1">Be first to try <span class="hl">Fridge Bot.</span></h1>
+      <p class="lede rise d2">We'll email you when beta units are ready. One email when there's news, nothing else.</p>
+      <div class="perks rise d3">
+        <div class="perk"><span class="ico-sq" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="16" height="12" rx="3"/><circle cx="12" cy="12" r="3.2"/></svg></span><div><h3>Early beta access</h3><p>Beta units go to people on the list first.</p></div></div>
+        <div class="perk"><span class="ico-sq mint" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></span><div><h3>First to hear</h3><p>Price and ship date go to the waitlist before anywhere else.</p></div></div>
+        <div class="perk"><span class="ico-sq" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span><div><h3>Shape the product</h3><p>Reply to any email. Your fridge, your feedback, our roadmap.</p></div></div>
+      </div>
+    </div>
+
+    <div class="form-card rise d2">
+      <form id="waitlist-full" novalidate style="display:grid;gap:20px">
+        <div class="form-row two">
+          <div class="form-row">
+            <label for="wl-name">First name <span class="opt-tag">(optional)</span></label>
+            <input class="input" id="wl-name" name="name" autocomplete="given-name" placeholder="Alex">
+          </div>
+          <div class="form-row">
+            <label for="wl-zip">ZIP code <span class="opt-tag">(optional)</span></label>
+            <input class="input" id="wl-zip" name="zip" inputmode="numeric" autocomplete="postal-code" placeholder="10001">
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="wl-email">Email address</label>
+          <input class="input" id="wl-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="wl-fridge">What kind of fridge do you have?</label>
+          <select class="select" id="wl-fridge" name="fridge">
+            <option>Top freezer</option>
+            <option>Bottom freezer</option>
+            <option>French door</option>
+            <option>Side by side</option>
+            <option>Mini fridge</option>
+            <option>Not sure</option>
+          </select>
+        </div>
+        <fieldset class="form-row">
+          <legend>What would help you most?</legend>
+          <div class="choice-grid">
+            <label class="choice"><input type="checkbox" name="want" value="reminders" checked><span>Use-first reminders</span></label>
+            <label class="choice"><input type="checkbox" name="want" value="store"><span>Checking from the store</span></label>
+            <label class="choice"><input type="checkbox" name="want" value="recipes"><span>Recipe ideas</span></label>
+            <label class="choice"><input type="checkbox" name="want" value="savings"><span>Tracking savings</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="form-row">
+          <legend>Want to be a beta tester?</legend>
+          <div class="choice-grid">
+            <label class="choice"><input type="radio" name="beta" value="yes" checked><span>Yes, count me in</span></label>
+            <label class="choice"><input type="radio" name="beta" value="no"><span>Just send news</span></label>
+          </div>
+        </fieldset>
+        <button class="btn btn-primary" type="submit">Join the waitlist <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+        <p class="form-status" id="waitlist-status" role="status"></p>
+        <p class="form-fine">No spam. Unsubscribe any time. See our <a href="privacy.html">privacy promise</a>.</p>
+      </form>
+
+      <div class="success" id="waitlist-done" hidden>
+        <span class="ico-sq mint" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span>
+        <h2 tabindex="-1">You're on the list<span data-name></span>.</h2>
+        <p style="color:var(--muted)">We'll be in touch when beta units are ready. In the meantime, see how it all works.</p>
+        <p class="form-fine">Preview: sign-ups aren't saved yet. A sign-up service will be connected before launch.</p>
+        <div class="hero-ctas"><a class="btn btn-ghost" href="how-it-works.html">How it works</a><a class="btn btn-ghost" href="app.html">App demo</a></div>
+      </div>
+    </div>
+  </div>
+</section>

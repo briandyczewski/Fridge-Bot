@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How it works · Fridge Bot</title>
+<meta name="description" content="From door close to your phone: how Fridge Bot photographs your shelves, recognizes each item, and estimates how long it has left.">
+<meta property="og:title" content="How it works · Fridge Bot">
+<meta property="og:description" content="From door close to your phone: how Fridge Bot photographs your shelves, recognizes each item, and estimates how long it has left.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0D2420">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<script>try{var t=localStorage.getItem('fb-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <div class="nav-inner">
+      <a class="logo" href="index.html" aria-label="Fridge Bot home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="1" width="12" height="16" rx="3.5"/><path d="M3 7h12"/><path d="M6.5 10v3" stroke-linecap="round"/></svg>
+        </span>
+        Fridge Bot
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="how-it-works.html">How it works</a>
+        <a href="app.html">The app</a>
+        <a href="hardware.html">Hardware</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <div class="nav-tools">
+          <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle dark mode">
+            <svg class="i-moon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 12.2A7 7 0 0 1 7.8 3.5a7 7 0 1 0 8.7 8.7z"/></svg>
+            <svg class="i-sun" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10" cy="10" r="3.5"/><path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M4 16l1.4-1.4M14.6 5.4L16 4"/></svg>
+          </button>
+          <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h14M3 10h14M3 14h14"/></svg>
+          </button>
+          <a class="btn btn-primary" href="waitlist.html">Join the waitlist</a>
+        </div>
+      </nav>
+    </div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="app.html">The app</a>
+      <a href="hardware.html">Hardware</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a class="btn btn-primary" href="waitlist.html">Join the waitlist</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-hero">
+  <div class="wrap">
+    <nav class="crumbs rise" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>How it works</span></nav>
+    <h1 class="rise d1">One photo per door close. <span class="hl">Zero typing.</span></h1>
+    <p class="lede rise d2">Fridge Bot turns a single still photo into a list of what's in your fridge and how long each thing has left. Here's every step, from the door shutting to the reminder on your phone.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <ol class="pipeline reveal" style="list-style:none;margin:0;padding:0">
+      <li class="pipe">
+        <span class="pipe-dot" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2.5" width="14" height="19" rx="3"/><path d="M5 9.5h14M8.5 12.5v3"/></svg></span>
+        <h3>Door closes</h3>
+        <p>A light sensor notices the fridge has gone dark.</p>
+      </li>
+      <li class="pipe">
+        <span class="pipe-dot" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="3"/><circle cx="12" cy="12.5" r="3.5"/><path d="M8 6l1.5-2.5h5L16 6"/></svg></span>
+        <h3>One photo</h3>
+        <p>Its own small light comes on and it takes a single still.</p>
+      </li>
+      <li class="pipe">
+        <span class="pipe-dot" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3"/><rect x="8" y="8" width="8" height="8" rx="1.5"/></svg></span>
+        <h3>AI finds items</h3>
+        <p>A vision model outlines and names each thing on each shelf.</p>
+      </li>
+      <li class="pipe">
+        <span class="pipe-dot" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span>
+        <h3>Days left</h3>
+        <p>It compares when each item first appeared to typical shelf life.</p>
+      </li>
+      <li class="pipe">
+        <span class="pipe-dot" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9a6 6 0 0 1 12 0c0 6 2.5 7.5 2.5 7.5h-17S6 15 6 9z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></span>
+        <h3>Your phone</h3>
+        <p>The list updates, and you get a nudge if something needs using.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="detail reveal">
+      <div class="detail-copy">
+        <span class="num">STEP 01 · CAPTURE</span>
+        <h2>It waits for the door to shut.</h2>
+        <p>The camera sits on the top shelf, facing the rest of the fridge. A light sensor tells it when the door has closed, so it never fires while someone is standing there.</p>
+        <p>Then it switches on its own small light, takes one still photo through an anti-fog lens, and sends it over Wi-Fi. No live video, ever.</p>
+      </div>
+      <div class="visual" aria-hidden="true">
+        <svg viewBox="0 0 400 260">
+          <rect x="40" y="20" width="320" height="220" rx="22" fill="var(--cavity)" stroke="var(--cavity-edge)" stroke-width="2"/>
+          <rect x="40" y="100" width="320" height="6" fill="var(--glass)"/>
+          <rect x="40" y="170" width="320" height="6" fill="var(--glass)"/>
+          <rect x="180" y="30" width="40" height="22" rx="7" fill="var(--ink)"/>
+          <circle cx="200" cy="41" r="6" fill="var(--mint)"/>
+          <path d="M200 52 L70 230 L330 230 Z" fill="var(--mint)" opacity=".12"/>
+          <path d="M200 52 L70 230 M200 52 L330 230" stroke="var(--mint)" stroke-width="1.5" stroke-dasharray="5 5"/>
+          <rect x="80" y="62" width="34" height="38" rx="5" fill="#3C7FD0" opacity=".85"/>
+          <rect x="250" y="70" width="70" height="30" rx="6" fill="#C9B79A"/>
+          <rect x="110" y="134" width="90" height="36" rx="8" fill="#8C2F1C" opacity=".8"/>
+          <circle cx="260" cy="150" r="16" fill="#D93A2B"/><circle cx="290" cy="156" r="14" fill="#E04A2F"/>
+          <rect x="70" y="190" width="120" height="40" rx="10" fill="#3F8E46" opacity=".8"/>
+          <path d="M230 210 L320 196 L322 206 Z" fill="#EE7A1E"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="detail flip reveal">
+      <div class="detail-copy">
+        <span class="num">STEP 02 · RECOGNIZE</span>
+        <h2>AI reads every shelf.</h2>
+        <p>A vision model looks at the photo and draws a box around each item it can see: the milk, the eggs, the leftover chili, the four tomatoes in the crisper. It names each one and counts multiples.</p>
+        <p>For packaged food it can also read printed dates when the label faces the camera.</p>
+      </div>
+      <div class="visual" aria-hidden="true">
+        <svg viewBox="0 0 400 260">
+          <rect x="20" y="20" width="360" height="220" rx="18" fill="var(--cavity)" stroke="var(--cavity-edge)" stroke-width="2"/>
+          <rect x="60" y="80" width="56" height="110" rx="8" fill="#FFFFFF" stroke="#C9D6D5" stroke-width="2"/>
+          <rect x="60" y="120" width="56" height="26" fill="#3C7FD0"/>
+          <rect x="150" y="140" width="110" height="50" rx="10" fill="#8C2F1C" opacity=".85"/>
+          <rect x="146" y="130" width="118" height="14" rx="5" fill="#DDE7E6"/>
+          <circle cx="300" cy="170" r="18" fill="#D93A2B"/><circle cx="330" cy="176" r="15" fill="#C9311F"/>
+          <rect x="52" y="72" width="72" height="126" rx="8" fill="none" stroke="var(--fresh)" stroke-width="2.4"/>
+          <rect x="52" y="48" width="70" height="22" rx="11" fill="var(--fresh)"/>
+          <text x="62" y="63" class="chip-text">MILK</text>
+          <rect x="140" y="122" width="130" height="76" rx="8" fill="none" stroke="var(--soon)" stroke-width="2.4"/>
+          <rect x="140" y="98" width="72" height="22" rx="11" fill="var(--soon)"/>
+          <text x="150" y="113" class="chip-text" style="fill:#241800">CHILI</text>
+          <rect x="278" y="146" width="76" height="52" rx="8" fill="none" stroke="var(--soon)" stroke-width="2.4"/>
+          <rect x="278" y="122" width="88" height="22" rx="11" fill="var(--soon)"/>
+          <text x="288" y="137" class="chip-text" style="fill:#241800">TOMATO ×2</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="detail reveal">
+      <div class="detail-copy">
+        <span class="num">STEP 03 · TRACK</span>
+        <h2>It remembers what it can't see.</h2>
+        <p>Every item gets a "first seen" date the moment it appears. That's how Fridge Bot knows the chili has been in there three days, even if nobody wrote it down.</p>
+        <p>When something gets pushed behind the new groceries, it stays on your list from earlier photos, marked "last seen" with a date, until it's actually gone.</p>
+      </div>
+      <div class="visual" aria-hidden="true">
+        <svg viewBox="0 0 400 240">
+          <g font-family="var(--font-mono)" font-size="11" fill="var(--muted)">
+            <text x="40" y="34">MON</text><text x="120" y="34">TUE</text><text x="200" y="34">WED</text><text x="280" y="34">THU</text>
+          </g>
+          <line x1="40" y1="46" x2="360" y2="46" stroke="var(--line-strong)" stroke-width="1.5"/>
+          <rect x="40" y="66" width="300" height="34" rx="10" fill="color-mix(in srgb, var(--soon) 22%, transparent)"/>
+          <text x="54" y="88" font-family="var(--font-body)" font-size="13" font-weight="600" fill="var(--ink)">Leftover chili · first seen Mon</text>
+          <rect x="120" y="116" width="240" height="34" rx="10" fill="color-mix(in srgb, var(--fresh) 20%, transparent)"/>
+          <text x="134" y="138" font-family="var(--font-body)" font-size="13" font-weight="600" fill="var(--ink)">Milk · opened Tue</text>
+          <rect x="40" y="166" width="160" height="34" rx="10" fill="color-mix(in srgb, var(--late) 18%, transparent)"/>
+          <rect x="200" y="166" width="120" height="34" rx="10" fill="none" stroke="var(--late)" stroke-width="1.5" stroke-dasharray="5 4"/>
+          <text x="54" y="188" font-family="var(--font-body)" font-size="13" font-weight="600" fill="var(--ink)">Spinach</text>
+          <text x="212" y="188" font-family="var(--font-mono)" font-size="10.5" fill="var(--late)">HIDDEN · LAST SEEN</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="detail flip reveal">
+      <div class="detail-copy">
+        <span class="num">STEP 04 · REMIND</span>
+        <h2>You hear about it in time to cook it.</h2>
+        <p>Your list is sorted by what to eat first. When something is about to turn, you get one short nudge, early enough to plan dinner around it, often with a recipe idea that uses it up.</p>
+        <p>If the app guesses wrong, correct it with a tap. It learns from that.</p>
+      </div>
+      <div class="visual" aria-hidden="true">
+        <div class="float notify" style="position:static;width:min(320px,100%);animation:none">
+          <span class="app-ico"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="1" width="12" height="16" rx="3.5"/><path d="M3 7h12"/><path d="M6.5 10v3" stroke-linecap="round"/></svg></span>
+          <span>
+            <span class="meta"><span>Fridge Bot</span><span>4:30 PM</span></span>
+            <b>Spinach needs using today</b>
+            Pair it with the leftover chili for dinner tonight.
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Shelf-life logic</span>
+      <h2>How "days left" gets estimated.</h2>
+      <p>Each item starts from a typical fridge life for that kind of food, counted from the day it first showed up. Printed dates and your corrections override the estimate.</p>
+    </div>
+    <div class="table-wrap reveal">
+      <table class="life">
+        <thead><tr><th>Example item</th><th>Starts counting from</th><th>Can be refined by</th><th>Shown as</th></tr></thead>
+        <tbody>
+          <tr><td>Leafy greens</td><td>First seen in a photo</td><td>Your correction</td><td><span class="pill late">TODAY</span></td></tr>
+          <tr><td>Cooked leftovers</td><td>First seen in a photo</td><td>Your correction</td><td><span class="pill soon">1 DAY</span></td></tr>
+          <tr><td>Fresh tomatoes</td><td>First seen in a photo</td><td>Your correction</td><td><span class="pill soon">2 DAYS</span></td></tr>
+          <tr><td>Milk</td><td>Printed date or first seen</td><td>Label facing the camera</td><td><span class="pill fresh">4 DAYS</span></td></tr>
+          <tr><td>Eggs</td><td>Printed date or first seen</td><td>Label facing the camera</td><td><span class="pill fresh">2 WK</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">Illustrative examples. Estimates are guidance, not food-safety advice. When in doubt, check it before you eat it.</p>
+  </div>
+</section>
+
+<div class="join">
+  <div class="wrap">
+    <div class="join-card cta-card reveal">
+      <div>
+        <span class="eyebrow">See it from the phone side</span>
+        <h2 style="margin-top:14px">Your fridge, sorted by what to eat first.</h2>
+        <p>Click through the app demo, or get on the list for beta units.</p>
+      </div>
+      <div class="hero-ctas">
+        <a class="btn btn-on-deep" href="app.html">Try the app demo</a>
+        <a class="btn btn-primary" href="waitlist.html">Join the waitlist</a>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div class="footer-grid">
+      <div class="about-col">
+        <a class="logo" href="index.html">
+          <span class="logo-mark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="1" width="12" height="16" rx="3.5"/><path d="M3 7h12"/><path d="M6.5 10v3" stroke-linecap="round"/></svg></span>
+          Fridge Bot
+        </a>
+        <p>A small camera for the fridge you already own. AI keeps track of what's inside so less food gets forgotten.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="app.html">The app</a></li>
+          <li><a href="hardware.html">Hardware</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="waitlist.html">Waitlist</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Trust</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="hardware.html#privacy">How the camera sees</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine"><span>Less forgotten food.</span><span>© <span data-year>2026</span> Fridge Bot</span></div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
