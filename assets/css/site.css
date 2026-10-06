@@ -191,7 +191,7 @@ table.life td:last-child { white-space: nowrap; }
 .form-card { padding: clamp(24px, 4vw, 40px); border-radius: var(--r-lg); background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-lg); display: grid; gap: 20px; }
 .form-row { display: grid; gap: 8px; }
 .form-row.two { grid-template-columns: 1fr 1fr; gap: 16px; }
-.form-row label, .form-row legend { font: 500 .75rem var(--font-mono); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); padding: 0; }
+.form-row > label, .form-row > legend { font: 500 .75rem var(--font-mono); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); padding: 0; }
 .form-row .opt-tag { text-transform: none; letter-spacing: 0; font-family: var(--font-body); opacity: .8; }
 .input, .select {
   width: 100%; font: 400 1rem var(--font-body); color: var(--ink);
